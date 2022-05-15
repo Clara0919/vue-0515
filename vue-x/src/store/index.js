@@ -20,6 +20,7 @@ export default createStore({
   },
   mutations: {
     //methods
+    //可以去改變上面state的資料
     setTitle(state, titleData) { //titleData是要儲存傳送給setTitle資料的參數
       state.name = titleData.name
       state.job = titleData.job
@@ -27,6 +28,7 @@ export default createStore({
   },
   actions: {
     //methods
+    //類似mutations但是他不會更改資料，需要透過commit呼叫mutations傳遞出資料
   },
   modules: {
   }
