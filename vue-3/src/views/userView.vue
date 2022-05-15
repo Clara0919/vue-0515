@@ -3,7 +3,8 @@
     <div>name:{{userInfo.name}}</div>
     <div>email:{{userInfo.email}}</div>
     <hr>
-    <router-link :to="`/users/${id}/todos`">{{userInfo.username}}的todo</router-link>
+    <router-link :to="`/users/${$route.params.userId}/todos`">{{userInfo.username}}的todo</router-link>
+    
     <router-view/>
 
 </template>
